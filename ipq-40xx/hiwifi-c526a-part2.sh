@@ -70,5 +70,9 @@ EOF
 #CONFIG_PACKAGE_default-settings=y
 #EOF
 
+cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-openclash=y
+EOF
+
 # 其它
 sed -i '21d' package/lean/default-settings/files/zzz-default-settings #禁止网络共享分类到NAS
